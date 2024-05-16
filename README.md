@@ -1,5 +1,5 @@
 # Ex.07 Software Product Company Website
-## Date:23.04.2024
+## Date:
 
 ## AIM:
 To develop a static company website to display the softwares and services provided by the company.
@@ -29,722 +29,894 @@ Publish the website in the given URL.
 
 ## PROGRAM:
 ```
-web.html
 <html>
-<title>hpksofco</title>
-<style>
-    body{
-        background-color:plum;
-        background-size: cover;      
-    }
-    h1{
-        color: rgb(248, 242, 242);
-    }
-    h2{
-        color: rgb(212, 205, 205);
-    }
-    h3{
-        color:rgb(24, 18, 18);
-        align:center;
-    }
-
-/* the main window options*/
-.styled form {
-            margin margin-top: 20px;
-            display:flex;
-            justify-content:space-between;
-        }
-        .styled [type="button"] {
-            padding: 10px 20px; /* button size */
-            background-color: #3498db; /* initial background color */
-            color: #ffffff; /*initial text color */
-            border: none;
-            transition: background-color 0.3s, color 0.3s; /*smooth transition */
-        }
-        .styled [type="button"]:hover {
-            background-color:purple; /*background color on hover */
-            color:aliceblue; /*text color on hover */
-        }
-        .styled [type="submit"] {
-            border-radius: 10px;
-            padding: 5px 10px; /* button size */
-            background-color: #3498db; /* initial background color */
-            color: #ffffff; /*initial text color */
-            border: none;
-            transition: background-color 0.3s, color 0.3s; /*smooth transition */
-        }
-        .styled [type="submit"]:hover {
-            background-color:purple; /*background color on hover */
-            color:#ffffff; /*text color on hover */
-        }
-        .styled [type="text"] {
-            margin-left: 500px;
-            transition: background-color 0.3s; 
-            background-color:bisque;
-        }
-        .styled input[type="text"]:focus {
-    /* Change background color when input is focused */
-    background-color:rgb(224, 127, 224); /* Adjust the color as needed */
-}
-
-.login{
-    margin-top: -100;
-    margin-left: 1100;
-    margin-right: 100;    
-    background:url(123.jpg);
-
-    scroll-padding-left: 5px;
-    border:2px solid white;
-}
-.login input[type="button"] {
-    padding: 10px 20px; /*  button size */
-    background-color: #3498db;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-.login input[type="button"]:hover {
-    color:#000;
-    background-color:rgb(204, 32, 204);
-}
-.login input[type="submit"]{
-    padding: 10px 15px; /*  button size */
-    background-color:#4234db;
-    color: #ffffff;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-.login input[type="submit"]:hover {
-    color:#000;
-    background-color:chocolate;
-}
-.login input[type="text"] { 
-    padding: 10px; /* Add padding for better appearance */
-    transition: background-color 0.3s; /* Add transition for a smooth effect */
-        /* Set initial background color */
-        background-color: #ffffff;
-}
-.login input[type="text"]:focus {
-    /* Change background color when input is focused */
-    background-color:slateblue; /* Adjust the color as needed */
-}
-.join{
-    padding: 10px 20px; /*  button size */
-    background-color: #3498db;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-.join:hover {
-    color: aquamarine;
-    background-color: #4234db;
-}
-
-/main html</
-</style>
-<body >
-    <form class="styled ">
-        <div class=>
-            <a href="web.html">
-                <input type="button" value="HOME">
-            </a>
-            <a href="products.html">
-                <input type="button" value="OUR PRODUCTS">
-            </a>
-
-            <a href="about.html">
-                <input type="button" value="ABOUT US">
-            </a>
-            <a href="sign.html">
-                <input type="button" value="SIGN IN">
-            </a>
-            <a href="contactus.html">
-                <input type="button" value="CONTACT">
-            </a>  
-            <input type="text">
-            <input type="submit"value="SEARCH">  
-        </div>
-    </form>
-
-    <h1>WELCOME TO HARI TECH</h1>
-    <h2>one of the most trusted and valuble company</h2>
-    <h2>PRODUCTS</h2>
-    <a href="sign.html">
-        <input type="button" value="JOIN US" class="join">
-    </a>  
-    
-    <h3>"People who need something really important they must know how what is the process to get it"</h3>
-
-         <center>
-        <div class="login">
-            <div class="login-box">
-            <p style="color: aliceblue;">DONT HAVE AN ACCOUNT</p>
-            <a href="sign.html">
-                <input type="button" value="SIGN IN"><br><br>
-            </a>  
-            <p style="color: aliceblue;">LOGIN</p>
-            <input type="text" value="Username or email" ><br><br>
-            <input type="text" value="Password"><br><br>
-            <a href="products.html">
-                <input type="submit" value="SUBMIT"><br><br>
-            </a>  
-        </div>
-        </div>
-    </center>
-
-</body>
-<footer style="background-color:darkmagenta;margin-top: 230; border: none;">
-    <P style="color:#ffffff; ;"align="center">Designed and Devoloped by Hariharan A 23012392 </P>
-</footer>
-</html>
-
-```
-
-```
-about.html
-<html>
-<title>about us</title>
-<style>
-    p{
-        color: rgb(251, 246, 246);
-    }
-    body{
-        background-color: rgb(82, 72, 167);
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAJ TECH</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .banner {
+        width: 100%;
+        height: 95vh;
+        background-image: linear-gradient(
+            rgba(9, 2, 2, 0.75),
+            rgba(0, 0, 0, 0.75)
+          ),
+          url(BG.jpeg);
         background-size: cover;
-    }
-    .styled form {
-            margin margin-top: 20px;
-            display: flex;
-            justify-content:space-between;
-        }
-        .styled [type="button"] {
-            padding: 10px 20px; /* button size */
-            background-color: #3498db; /* initial background color */
-            color: #ffffff; /*initial text color */
-            border: none;
-            transition: background-color 0.3s, color 0.3s; /*smooth transition */
-        }
-        .styled [type="button"]:hover {
-            background-color:purple; /*background color on hover */
-            color:aliceblue; /*text color on hover */
-        }
-        .styled [type="submit"] {
-            border-radius: 10px;
-            padding: 5px 10px; /* button size */
-            background-color: #3498db; /* initial background color */
-            color: #ffffff; /*initial text color */
-            border: none;
-            transition: background-color 0.3s, color 0.3s; /*smooth transition */
-        }
-        .styled [type="submit"]:hover {
-            background-color:purple; /*background color on hover */
-            color:#ffffff; /*text color on hover */
-        }
-        .styled [type="text"] {
-            margin-left: 500px;
-            transition: background-color 0.3s; 
-            background-color:rgba(114, 183, 217, 0.716);
-        }
-        .styled input[type="text"]:focus {
-    /* Change background color when input is focused */
-    background-color:rgb(224, 127, 224); /* Adjust the color as needed */
-}
-.photos{
-    display:flex;
-    justify-content: space-around;
-    margin-top: 200px;
-}
-.names{
-    display:flex;
-    justify-content: space-around;
+        background-position: center;
+      }
+      .navbar {
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .logo {
+        color: #0bfbdf;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 3px;
+      }
+      span {
+        color: rgb(24, 150, 196);
+      }
+      form {
+        width: 300px;
+        height: 40px;
+        display: flex;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 1px 1px;
+        font-size: 15px;
+        border-radius: 10px;
+        backdrop-filter: blur(4px) saturate(180%);
+      }
+      form input {
+        background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        padding: 12px 20px;
+        font-size: 15px;
+        color: rgb(11, 109, 154);
+      }
+      ::placeholder {
+        color: white;
+      }
+      form button {
+        border: 0;
+        outline: none;
+        padding: 5px 20px;
+        color: white;
+        border-radius: 10px;
+        background: #00d5ff;
+        cursor: pointer;
+      }
+      #search.hover {
+        border: 1px;
+        padding: 10px;
 
-}
-.position {
-    display: flex;
-    justify-content: space-around;
-    margin-left: 10px;
-    border-image:5px;
-    border-image: rgb(214, 152, 71);
-}
+        transition: 0.5s;
+        cursor: pointer;
+        border-radius: 30px;
+        background: #0ef;
+        color: #081b29;
+        box-shadow: 0 0 20px #0ef;
+      }
+      .navbar li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+      }
+      .navbar li a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+      }
+      .navbar li:hover {
+        border: 1px;
+        padding: 10px;
 
-</style>
-<body>
-    <form class="styled ">
-        <div class=>
-            <a href="web.html">
-                <input type="button" value="HOME">
-            </a>
-            <a href="products.html">
-                <input type="button" value="OUR PRODUCTS">
-            </a>
-            <a href="about.html">
-                <input type="button" value="ABOUT US">
-            </a>
-            <a href="sign.html">
-                <input type="button" value="SIGN IN">
-            </a>
-            <a href="contactus.html">
-                <input type="button" value="CONTACT">
-            </a>  
-            <input type="text">
-            <input type="submit"value="SEARCH">  
-        </div>
-    </form>
-    <div class="photos">
-    <img src="my photo.jpg" height="200" width="180">
-    <img src="vijay.jpg" height="200" width="200">
-    <img src="Ajith kumar.jpeg" height="200" width="200">
-    <img src="surya.jpeg" height="200" width="200">
-    <img src="dhanush.jpeg" height="200" width="200">
-    <img src="adithya varma.jpeg" height="200" width="200">
-    <img src="sivakarthi.jpeg" height="200" width="200">
-</div>
-<div CLASS="names">
-    <P>HARIHARAN A</P>    
-    <P style="margin-left:-20;">MR VIJAY</P>    
-    <P>MR Ajith</P>    
-    <P>MR Surya</P>    
-    <P>MR Dhanush</P>    
-    <P>MR Adhithya varma</P>    
-    <P>MR SK</P>    
-</div>
-<DIV class="position">
-    <p>FOUNDER </p>
-    <p style="margin-left:40;">CEO </p>
-    <p style="margin-left:60;">CO-FOUNDER </p>
-    <p>CO-FOUNDER </p>
-    <p>DIRECTOR </p>
-    <p >CO-DIRECTOR</p>
-    <p>EXEC-DIRECTOR </p>
+        transition: 0.5s;
+        cursor: pointer;
+        border-radius: 30px;
+        background: red;
+        color: #081b29;
+        box-shadow: 0 0 20px red;
+      }
+      .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .text h2 {
+        color: white;
+        font-weight: 800;
+        font-size: 50px;
+        letter-spacing: 3px;
+      }
+      .text p {
+        color: white;
+        text-transform: capitalize;
+        font-size: 15px;
+        margin-bottom: 30px;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+      }
+      .login {
+        margin: 0px 10px;
+        border: 2px solid red;
+        padding: 13px 35px;
+        letter-spacing: 1px;
+        color: white;
+        border-radius: 30px;
+        background-color: red;
+        text-decoration: none;
+      }
+      .login:hover {
+        border: 2px solid red;
+        color: red;
+        background-color: white;
+        transition: 0.5s;
+        cursor: pointer;
+      }
+      .signup {
+        margin: 0px 10px;
+        border: 2px solid green;
+        padding: 13px 35px;
+        letter-spacing: 1px;
+        color: white;
+        border-radius: 30px;
+        background-color: green;
+        text-decoration: none;
+      }
+      .signup:hover {
+        border: 2px solid green;
+        color: green;
+        background-color: white;
+        transition: 0.5s;
+        cursor: pointer;
+      }
+      footer {
+        border: 1px;
+        padding: 10px;
 
-</DIV>
-</body>
-<footer style="background-color:darkmagenta;margin-top: 230; border: none;">
-    <P style="color:#ffffff; ;"align="center">Designed and Devoloped by HARIHARAN A 23012392</P>
-</footer>
-</html>
-```
-
-```
-sign.html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Sign Up</title>
-    <style>
-        body {
-            background-color:rgb(115, 126, 182);
-            background-size: cover;
-            color: antiquewhite;
-            font-family: Arial, sans-serif;
-        }
-
-        .form {
-            margin: 0 auto;
-            width: 300px;
-            padding: 20px;
-        }
-
-        label {
-            color: chocolate;
-        }
-
-        .purpose {
-            color: aqua;
-        }
-
-        .buttons {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: #ffffff;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .buttons:hover {
-            color: aqua;
-            background-color: #4234db;
-        }
-        .styled form {
-            margin margin-top: 20px;
-            display: flex;
-            justify-content: space-between;
-        }
-        .styled [type="button"] {
-            padding: 10px 20px; /* button size */
-            background-color: #3498db; /* initial background color */
-            color: #ffffff; /*initial text color */
-            border: none;
-            transition: background-color 0.3s, color 0.3s; /*smooth transition */
-        }
-        .styled [type="button"]:hover {
-            background-color:purple; /*background color on hover */
-            color:aliceblue; /*text color on hover */
-        }
-        .styled [type="submit"] {
-            border-radius: 10px;
-            padding: 5px 10px; /* button size */
-            background-color: #3498db; /* initial background color */
-            color: #ffffff; /*initial text color */
-            border: none;
-            transition: background-color 0.3s, color 0.3s; /*smooth transition */
-        }
-        .styled [type="submit"]:hover {
-            background-color:purple; /*background color on hover */
-            color:#ffffff; /*text color on hover */
-        }
-        .styled [type="text"] {
-            margin-left: 500px;
-            transition: background-color 0.3s; 
-            background-color:bisque;
-        }
-        .styled input[type="text"]:focus {
-    /* Change background color when input is focused */
-    background-color:rgb(224, 127, 224); /* Adjust the color as needed */
-}
-.text{
-    transition: background-color 0.3s, color 0.3s;
-
-}
-.text :focus{
-    background-color:skyblue;  
-}
-.full{
-    background:url(bg3.jpg);
-    padding: 10px;
-    border:4px double white;
-}
+        transition: 0.5s;
+        cursor: pointer;
+        border-radius: 30px;
+        background: red;
+        color: #081b29;
+        box-shadow: 0 0 20px red;
+      }
     </style>
-</head>
-<body>
-    <form class="styled ">
-        <div class=>
-            <a href="web.html">
-                <input type="button" value="HOME">
-            </a>
-            <a href="products.html">
-                <input type="button" value="OUR PRODUCTS">
-            </a>
-            <a href="about.html">
-                <input type="button" value="ABOUT US">
-            </a>
-            <a href="sign.html">
-                <input type="button" value="SIGN IN">
-            </a>
-            <a href="contactus.html">
-                <input type="button" value="CONTACT">
-            </a>  
-            <input type="text">
-            <input type="submit"value="SEARCH">  
-        </div>
-    </form>
-    <div class="form">
-        <p align="center">JOIN THE FAMILY OF HPKSOFCO</p>
-        <p align="center">DON'T HAVE AN ACCOUNT YET?</p>
-        <div class="full">
-        <div class="text">
-           
-        <label>Unique Username</label>
-        <input type="text" value="username"><br><br>
-        <label>Email</label>
-        <input type="email" value="email"><br><br>
-        </div>
-        <label>DOB</label>
-        <input type="date"><br><br>
-        <label>Gender</label><br>
-        <div class="purpose">
-            <input type="radio" name="gender">Male<br>
-            <input type="radio" name="gender">Female<br><br>
-        </div>
-        <label>Purpose</label><br>
-        <div class="purpose">
-            <input type="radio" name="purpose">Study<br>
-            <input type="radio" name="purpose">Work<br>
-            <input type="radio" name="purpose">Partnership<br><br>
-        </div>
-        <label>Click the checkbox to prove you are human</label>
-        <input type="checkbox"><br><br>
-        
-            <input type="submit" value="CREATE ACCOUNT" class="buttons">
-            <input type="submit" value="DOWNLOAD SOFTWARE"class="buttons">
-        
-    </div>
-</div>
-</body>
-<footer style="background-color:darkmagenta; margin-top: 125px;border: none;">
-    <P style="color:#ffffff ;"align="center">Designed and Devoloped by Hariharan A 23012392 </P>
-</footer>
-</html>
-```
-
-```
-contactus.html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Contact Us</title>
-    <style>
-        b{
-            color:cornflowerblue
-        }
-        p {
-            color: aliceblue;
-        }
-
-        body {
-            background-color:plum;
-        }
-
-        .yourinfo {
-            background:url(bg4.jpg);
-            border:5px solid rgb(232, 71, 71);
-            margin-right: 800px ;
-            
-            margin-top: 200px; /* Adjusted margin-top */
-            padding: 10px; /* Added padding for better spacing */
-        }
-        .yourinfo input[type="text"] {
-            width: 500px;
-            transition: background-color 0.3s; 
-        }
-        .yourinfo input[type="text"]:focus {
-    /* Change background color when input is focused */
-    background-color: #2278c3; /* Adjust the color as needed */
-}
-
-        .buttons {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: #ffffff;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .buttons:hover {
-            color: aqua;
-            background-color: #4234db;
-        }
-        .styled form {
-            display: flex;
-            justify-content: space-evenly;
-        }
-        .styled form {
-            margin margin-top: 20px;
-            display: flex;
-            justify-content: space-between;
-        }
-        .styled [type="button"] {
-            padding: 10px 20px; /* button size */
-            background-color: #3498db; /* initial background color */
-            color: #ffffff; /*initial text color */
-            border: none;
-            transition: background-color 0.3s, color 0.3s; /*smooth transition */
-        }
-        .styled [type="button"]:hover {
-            background-color:purple; /*background color on hover */
-            color:aliceblue; /*text color on hover */
-        }
-        .styled [type="submit"] {
-            border-radius: 10px;
-            padding: 5px 10px; /* button size */
-            background-color: #3498db; /* initial background color */
-            color: #ffffff; /*initial text color */
-            border: none;
-            transition: background-color 0.3s, color 0.3s; /*smooth transition */
-        }
-        .styled [type="submit"]:hover {
-            background-color:purple; /*background color on hover */
-            color:#ffffff; /*text color on hover */
-        }
-        .styled [type="text"] {
-            margin-left: 500px;
-            transition: background-color 0.3s; 
-            background-color:bisque;
-        }
-        .styled input[type="text"]:focus {
-    /* Change background color when input is focused */
-    background-color:rgb(224, 127, 224); /* Adjust the color as needed */
-}
-    
-.company{
-
-margin-left: 900px;
-margin-top: -330px;
-background:url(bg5.jpg);
-
-scroll-padding-left: 5px;
-border:2px solid white;
-}
-.message textarea {
-        background-color: white; /* Set the default background color */
-        color: black; /* Set the default text color */
-    }
-
-    /* Styles for the text area when it is in focus */
-.message    textarea:focus {
-        background-color: cadetblue; /* Set the background color when in focus */
-        color: white; /* Set the text color when in focus */
-    }
-    </style>
-</head>
-<body>
-    <form class="styled">
-        <div>
-            <a href="web.html">
-                <input type="button" value="HOME">
-            </a>
-            <a href="products.html">
-                <input type="button" value="OUR PRODUCTS">
-            </a>
-            <a href="about.html">
-                <input type="button" value="ABOUT US">
-            </a>
-            <a href="sign.html">
-                <input type="button" value="SIGN IN">
-            </a>
-            <a href="contactus.html">
-                <input type="button" value="CONTACT">
-            </a>
-            <input type="text" >
-            <input type="submit" value="SEARCH">
-        </div>
-    </form>
-    <div class="yourinfo">
-        <center>
-        <p>Contact Information</p>
-        <div>            
-            <input type="text" maxlength="100" placeholder="Your Name"><br><br>
-            <input type="text" maxlength="100" placeholder="Your Email"><br><br>
-            <div class="message">
-            <textarea rows="5" cols="65" placeholder="Your Message"></textarea><br><br>
-        </div>
-            <input type="button" value="SUBMIT" class="buttons">
-        
-        </center>
-        </div>
-    </div>
-    <div class="company">
-        <center>
-        <h3 style="color: rgb(15, 16, 17);">COMPANY CONTACT INFORMATION</h3>
-       <p> <b >Address</b></p>
-        <p >22,saravana nagar,</p>
-        <p >Poonamallee Post</p>
-        <p >Chennai-600056</p>
-        <b >Email:</b>
-        <p >hariharana59@gmail.com</p>
-        <b >Phone</b>
-        <p >9360167882</p>
-    </center>
-    </div>
-</body>
-<footer style="background-color:darkmagenta;margin-top: 210px; border: none;">
-    <P style="color:#ffffff ;"align="center">Designed and Devoloped by HARIHARAN A 23012392 </P>
-</footer>
-</html>
-```
-
-```
-products.html
-<html>
-    <title>our products</title>
-    <style>  
-    body{
-        background:url(image.jpg);
-        background-size:contain;
-    } 
-    h1{
-        color: aliceblue;
-    }  
-    .styled form {
-            margin margin-top: 20px;
-            display: flex;
-            justify-content: space-between;
-        }
-        .styled [type="button"] {
-            padding: 10px 20px; /* button size */
-            background-color: #3498db; /* initial background color */
-            color: #ffffff; /*initial text color */
-            border: none;
-            transition: background-color 0.3s, color 0.3s; /*smooth transition */
-        }
-        .styled [type="button"]:hover {
-            background-color:purple; /*background color on hover */
-            color:aliceblue; /*text color on hover */
-        }
-        .styled [type="submit"] {
-            border-radius: 10px;
-            padding: 5px 10px; /* button size */
-            background-color: #3498db; /* initial background color */
-            color: #ffffff; /*initial text color */
-            border: none;
-            transition: background-color 0.3s, color 0.3s; /*smooth transition */
-        }
-        .styled [type="submit"]:hover {
-            background-color:purple; /*background color on hover */
-            color:#ffffff; /*text color on hover */
-        }
-        .styled [type="text"] {
-            margin-left: 500px;
-            transition: background-color 0.3s; 
-            background-color:bisque;
-        }
-        .styled input[type="text"]:focus {
-    /* Change background color when input is focused */
-    background-color:rgb(224, 127, 224); /* Adjust the color as needed */
-}
-</style>
-    
-    <body>
-        <form class="styled ">
-            <div class=>
-                <a href="web.html">
-                    <input type="button" value="HOME">
-                </a>
-                <a href="products.html">
-                    <input type="button" value="OUR PRODUCTS">
-                </a>
-                <a href="about.html">
-                    <input type="button" value="ABOUT US">
-                </a>
-                <a href="sign.html">
-                    <input type="button" value="SIGN IN">
-                </a>
-                <a href="contactus.html">
-                    <input type="button" value="CONTACT">
-                </a>  
-                <input type="text">
-                <input type="submit"value="SEARCH">  
-            </div>
+  </head>
+  <body>
+    <div class="banner">
+      <br />
+      <div class="navbar">
+        <h1 class="logo">R<span>AJ</span>T<span>ECH</span></h1>
+        <ul>
+          <li><a href="home.html"> Home </a></li>
+          <li><a href="products.html"> Products </a></li>
+          <li><a href="council.html"> People </a></li>
+          <li><a href="contact.html"> Contact </a></li>
+        </ul>
+        <form action="" method="get">
+          <input type="text" placeholder="Enter to Search" />
+          <button id="search" type="submit">Search</button>
         </form>
-        
-        <center>
-            <h1 >OUR PRESTIGEOUS PROJECTS</h1>
-        <img src="companny images.jpeg" height="500" width="800">
-    </center>
-    </body>
-    <footer style="background-color:darkmagenta;margin-top: 150; border: none;">
-        <P style="color:#ffffff; ;"align="center">Designed and Devoloped by HARIHARAN A 23012392</P>
+      </div>
+      <div class="content">
+        <div class="text">
+          <h2>
+            "Driving progress through precision engineering and boundless creativity." 
+          </h2>
+          <br />
+
+          <br />
+          <div>
+            <a href="#" class="login"> Log In </a>
+            <a href="#" class="signup"> Sign Up </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <center>DESIGNED AND DEVELOPED BY RAJKUMAR G(212223230166)</center>
     </footer>
+  </body>
 </html>
+
+product.html\
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .banner {
+        width: 100%;
+        height: 95vh;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
+          ),
+          url(BG.jpeg);
+        background-size: cover;
+        background-position: center;
+      }
+      .navbar {
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .bg-product {
+        border: 1px;
+        padding: 10px;
+        color: white;
+        background-color: red;
+        border-radius: 30px;
+      }
+      .logo {
+        color: #fb0b0b;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 3px;
+      }
+      span {
+        color: white;
+      }
+      form {
+        width: 300px;
+        height: 40px;
+        display: flex;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 1px 1px;
+        font-size: 15px;
+        border-radius: 10px;
+        backdrop-filter: blur(4px) saturate(180%);
+      }
+      form input {
+        background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        padding: 12px 20px;
+        font-size: 15px;
+        color: white;
+      }
+      ::placeholder {
+        color: white;
+      }
+      form button {
+        border: 0;
+        outline: none;
+        padding: 5px 20px;
+        color: white;
+        border-radius: 10px;
+        background: red;
+        cursor: pointer;
+      }
+      .navbar li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+      }
+      .navbar li a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+      }
+      .navbar li:hover {
+        border: 1px;
+        padding: 10px;
+
+        transition: 0.5s;
+        cursor: pointer;
+        border-radius: 30px;
+        background: red;
+        color: #081b29;
+        box-shadow: 0 0 20px red;
+      }
+      .container {
+        background: transparent;
+        padding: 10px 5%;
+        padding-bottom: 100px;
+      }
+      .container .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        gap: 100px;
+      }
+      .container .box-container .box {
+        color: white;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        background: transparent;
+        border: 1px solid white;
+        padding: 30px 20px;
+      }
+      .container .box-container .box img {
+        height: 70px;
+        border-radius: 20px;
+      }
+      .container .box-container .box h3 {
+        color: red;
+        font-size: large;
+        padding: 20px 0;
+      }
+      .container .box-container .box p {
+        color: white;
+        font-size: small;
+        line-height: 1.5;
+      }
+      footer {
+        border: 1px;
+        padding: 10px;
+
+        transition: 0.5s;
+        cursor: pointer;
+        border-radius: 30px;
+        background: red;
+        color: #081b29;
+        box-shadow: 0 0 20px red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <br />
+      <div class="navbar">
+        <h1 class="logo">R<span>AJA</span>T<span>ECH</span></h1>
+        <ul>
+          <li><a href="home.html"> Home </a></li>
+          <li><a href="products.html" class="bg-product"> Products </a></li>
+          <li><a href="council.html"> People </a></li>
+          <li><a href="contact_us.html"> Contact </a></li>
+        </ul>
+        <form action="" method="get">
+          <input type="text" placeholder="Enter to Search" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      <div class="container">
+        <div class="box-container">
+          <div class="box">
+            <h3>C++</h3>
+            <p>
+              Efficiency Redefined: Harnessing the Power of C++ for Next-Level Development
+            </p>
+          </div>
+          <div class="box">
+            <h3>C</h3>
+            <p>
+              Crafting Performance: Where Precision Meets C Programming.
+            </p>
+          </div>
+          <div class="box">
+            <h3>JAVASCRIPT</h3>
+            <p>
+              Scripting Success: Unleashing the Power of JavaScript.
+            </p>
+          </div>
+          <div class="box">
+            <h3>PHP</h3>
+            <p>
+              PHP is a server side scripting language that is embedded in HTML.
+            </p>
+          </div>
+          <div class="box">
+            <h3>PYTHON</h3>
+            <p>
+              Unlocking Innovation: Python Paving the Way to Progress.
+            </p>
+          </div>
+          <div class="box">
+            <h3>SQL</h3>
+            <p>
+              SQL is a standard language for accessing and manipulating
+              databases.
+            </p>
+          </div>
+          <div class="box">
+            <h3>SHELL</h3>
+            <p>
+              Shell can be accessed by users using a command line interface.
+            </p>
+          </div>
+          <div class="box">
+            <h3>RUBY</h3>
+            <p>
+              Ruby: Where Simplicity Meets Power in Programming
+            </p>
+          </div>
+          <div class="box">
+            <h3>TYPESCRIPT</h3>
+            <p>
+              Empower Your Code: Embrace the Future with TypeScript
+            </p>
+          </div>
+          <div class="box">
+            <h3>F#</h3>
+            <p>
+              F# is an Open-source programming language with a lot of features.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <center>Designed and DEVELOPED BY RAJKUMAR G(212223230166)</center>
+    </footer>
+  </body>
+</html>
+
+council.html
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>people page</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .banner {
+        width: 100%;
+        height: 95vh;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
+          ),
+          url(BG.jpeg);
+        background-size: cover;
+        background-position: center;
+      }
+      .navbar {
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .bg-people {
+        border: 1px;
+        padding: 10px;
+        color: white;
+        background-color: red;
+        border-radius: 30px;
+      }
+      .logo {
+        color: #fb0b0b;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 3px;
+      }
+      span {
+        color: white;
+      }
+      form {
+        width: 300px;
+        height: 40px;
+        display: flex;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 1px 1px;
+        font-size: 15px;
+        border-radius: 10px;
+        backdrop-filter: blur(4px) saturate(180%);
+      }
+      form input {
+        background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        padding: 12px 20px;
+        font-size: 15px;
+        color: white;
+      }
+      ::placeholder {
+        color: white;
+      }
+      form button {
+        border: 0;
+        outline: none;
+        padding: 5px 20px;
+        color: white;
+        border-radius: 10px;
+        background:red;
+        cursor: pointer;
+      }
+      .navbar li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+      }
+      .navbar li a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+      }
+      .navbar li:hover {
+        border: 1px;
+        padding: 10px;
+
+        transition: 0.5s;
+        cursor: pointer;
+        border-radius: 30px;
+        background: red;
+        color: #081b29;
+        box-shadow: 0 0 20px red;
+      }
+      .image {
+        position: relative;
+        border: 0;
+        top: 150px;
+
+        background: transparent;
+      }
+      .image table {
+        border: 0;
+        color: white;
+        position: relative;
+        left: 200px;
+        border: 10PX;
+        padding-left: 10px;
+      
+      }
+      .image table img {
+        height: 140px;
+        width: 140px;
+        border: 2px solid white;
+        padding: 5px;
+        border-radius: 50%;
+      }
+      .image table td {
+        color:red;
+      }
+      footer {
+        border: 1px;
+        padding: 10px;
+
+        transition: 0.5s;
+        cursor: pointer;
+        border-radius: 30px;
+        background: red;
+        color: #081b29;
+        box-shadow: 0 0 20px red;
+      }
+      .space{
+        padding-left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <br />
+      <div class="navbar">
+        <h1 class="logo">R<span>AJA</span>T<span>ECH</span></h1>
+        <ul>
+          <li><a href="home.html"> Home </a></li>
+          <li><a href="products.html"> Products </a></li>
+          <li><a href="council.html" class="bg-people"> People </a></li>
+          <li><a href="contact_us.html"> Contact </a></li>
+        </ul>
+        <form action="" method="get">
+          <input type="text" placeholder="Enter to Search" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      <div class="image">
+        <table cellspacing="65" >
+          <tr align="center">
+            <td><img src="./WhatsApp Image 2024-04-30 at 10.41.56_567e0b3c.jpg"></td>
+            <td><img src="./Screenshot 2024-04-30 104457.png"></td>
+            <td><img src="./Screenshot 2024-04-30 104509.png"></td>
+            <td><img src="./Screenshot 2024-04-30 104536.png"></td>
+            <td><img src="./Screenshot 2024-04-30 104557.png"></td>
+            <td><img src="./Screenshot 2024-04-30 104612.png"></td>
+          </tr>
+          <tr align="center" class="space">
+            <th>RAJKUMAR</th>
+            <th>RATAN TATA</th>
+            <th>STEVE JOBS</th>
+            <th>SUNDAR</th>
+            <th>WALT DISNEY</th>
+            <th>ELON MUSK</th>
+          </tr>
+          <tr align="center">
+            <td>CEO</td>
+            <td>CEO,Co-Founder</td>
+            <td>CTO,Co-Founder</td>
+            <td>DIRECTOR</td>
+            <td>Asst.Director</td>
+            <td>Dy.Director</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <footer>
+      <center>DESIGNED AND DEVELOPED BY RAJKUMAR G(212223230166)</center>
+    </footer>
+  </body>
+</html>
+
+
+contact.html
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us Page</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .banner {
+        width: 100%;
+        height: 95vh;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
+          ),
+          url(BG.jpeg);
+        background-size: cover;
+        background-position: center;
+      }
+      .navbar {
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .bg-contact {
+        border: 1px;
+        padding: 10px;
+        color: white;
+        background-color:RED;
+        border-radius: 30px;
+      }
+      .logo {
+        color: red;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 3px;
+      }
+      span {
+        color: white;
+      }
+      .navbar form {
+        width: 300px;
+        height: 40px;
+        display: flex;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 1px 1px;
+        font-size: 15px;
+        border-radius: 10px;
+        backdrop-filter: blur(4px) saturate(180%);
+      }
+      .navbar form input {
+        background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        padding: 12px 20px;
+        font-size: 15px;
+        color: white;
+      }
+      ::placeholder {
+        color: white;
+      }
+      .navbar form button {
+        border: 0;
+        outline: none;
+        padding: 5px 20px;
+        color: white;
+        border-radius: 10px;
+        background: red;
+        cursor: pointer;
+      }
+      .navbar li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+      }
+      .navbar li a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+      }
+      .navbar li:hover {
+        border: 1px;
+        padding: 10px;
+
+        transition: 0.5s;
+        cursor: pointer;
+        border-radius: 30px;
+        background: red;
+        color: #081b29;
+        box-shadow: 0 0 20px red;
+      }
+      .box {
+        display: flex;
+        column-gap: 40px;
+        background: transparent;
+        position: relative;
+        top: 50px;
+        width: 220px;
+      }
+      .box-1 {
+        height: 400px;
+        width: 400px;
+        border: 3px solid white;
+        border-radius: 20px;
+        background: transparent;
+        position: relative;
+        left: 250px;
+      }
+      .box-2 {
+        height: 400px;
+        width: 400px;
+        border: 3px solid #7300ff;
+        border-radius: 20px;
+        background: transparent;
+        position: relative;
+        left: 300px;
+      }
+      .box-1 form {
+        display: flex;
+        color: white;
+        background: transparent;
+        padding: 10px;
+        font-size: 15px;
+        position: relative;
+        top: 15px;
+      }
+      .box-1 form input {
+        background: transparent;
+        display: flex;
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 15px 30px;
+        font-size: 15px;
+        color: white;
+        position: relative;
+        top: 30px;
+      }
+      .box-1 form textarea {
+        background: transparent;
+        color: white;
+        padding: 15px 10px;
+        position: relative;
+        top: 30px;
+        left: 20px;
+        border: 1px solid white;
+        border-radius: 10px;
+        width: 300px;
+      }
+      .box-1 form button {
+        border: 0;
+        outline: none;
+        padding: 10px 20px;
+        color: white;
+        border-radius: 30px;
+        background: red;
+        cursor: pointer;
+        position: relative;
+        top: 50px;
+      }
+      .box-2 h2 {
+        color: white;
+        position: relative;
+        top: 25px;
+        left: 50px;
+        font-size: 30px;
+      }
+      .box-2 p {
+        color: white;
+        position: relative;
+        top: 50px;
+        padding: 10px 80px;
+      }
+      .box-2 span {
+        color: red;
+        font-size: 20px;
+      }
+      footer {
+        border: 1px;
+        padding: 10px;
+
+        transition: 0.5s;
+        cursor: pointer;
+        border-radius: 30px;
+        background: red;
+        color: #081b29;
+        box-shadow: 0 0 20px red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <br />
+      <div class="navbar">
+        <h1 class="logo">R<span>AJA</span>T<span>ECH</span></h1>
+        <ul>
+          <li><a href="home.html"> Home </a></li>
+          <li><a href="products.html"> Products </a></li>
+          <li><a href="council.html"> People </a></li>
+          <li><a href="contact_us.html" class="bg-contact"> Contact </a></li>
+        </ul>
+        <form action="" method="get">
+          <input type="text" placeholder="Enter to Search" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      <div class="box">
+        <div class="box-1">
+          <form>
+            <center>
+              <h1>Contact Us</h1>
+              <input type="text" placeholder="Your Name" />
+              <br />
+              <input type="email" placeholder="Your Email" />
+              <br />
+              
+              <br />
+              <button type="submit">Submit</button>
+            </center>
+          </form>
+        </div>
+        <div class="box-2">
+          <h2>Contact Information</h2>
+          <p>
+            <span>Address</span> :3RD Floor, Tower 12, FCA
+            Building No.18,ROOP DEVELOP CITY Phase-I SECUNDERABAD HR IN 1888546
+          </p>
+          <p><span>Email</span> : rtech.official@gmail.com</p>
+          <p><span>Phone</span> : 1234567890</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <center>DESIGNED AND DEVELOPED BY pramodh R(212221040128)</center>
+    </footer>
+  </body>
+</html>
+
 ```
 
 ## OUTPUT:
-![output](1.png)
+![image](https://github.com/Pramodhraj15/softweb/assets/130092183/76a0c602-2cec-46c3-9cd5-90d43a7766a0)
+![image](https://github.com/Pramodhraj15/softweb/assets/130092183/01a141da-c7eb-4c8b-aaa2-c6999f048ea3)
+![image](https://github.com/Pramodhraj15/softweb/assets/130092183/d73f066a-ee99-48fe-84a2-4a5007cd9ad6)
 
-![output](2.png)
 
-![output](3.png)
 
-![output](4.png)
-
-![output](5.png)
 
 ## RESULT:
 The program for designing software company website using HTML and CSS is completed successfully.
